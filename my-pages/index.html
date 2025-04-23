@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>任远畅</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    
+
+</head>
+
+<body>
+    <!-- <script> alert ('畅畅欢迎你！')</script>  -->
+    <h1 align="center">任远畅是我的朋友</h1>
+    <hr size="1" color="black" width="100%">
+    <p>我是任远畅，来自河南省信阳市，是一名大一学生。</p>
+    <p>我喜欢看书，<span style="color: red" "font-family : 'kaiTi'">听音乐，打篮球，看电影，玩游戏。</span></p>
+    <p>我喜欢的书籍有《活着》《白夜行》《解忧杂货店》《百年孤独》《三体》等。</p>
+    <p class="music">我喜欢的音乐有《夜空中最亮的星》《告白气球》《演员》《成全》《世界这么大还是遇见你》等。</p>
+    <p>我喜欢的电影有《霸王别姬》《肖申克的救赎》《阿甘正传》《泰坦尼克号》《盗梦空间》等。</p>
+    <p>我喜欢的游戏有<strong>《瓦洛兰特》</strong>《英雄联盟》《王者荣耀》《绝地求生》<i>《守望先锋》《魔兽世界》</i>等。</p>
+    <p>我喜欢的运动有篮球，足球，乒乓球，羽毛球，游泳等。</p>
+    <p>我喜欢的食物有火锅，烤肉，炸鸡，炸薯条，炸鸡翅等。</p>
+    <p>我喜欢的动物有狗，猫，熊猫，狐狸，狼等。</p>
+    <p id="color">我喜欢的颜色有黑色，白色，红色，蓝色，绿色等。</p>
+    <p>我喜欢的明星有周杰伦，林俊杰，张学友，刘德华，周润发等。</p>
+    <hr size="1" color="black" width="100%" align="center">
+    <h2 align="center">任远畅的照片</h2>
+    <p align="center"><img src="任.png" alt="任远畅的照片" width="200" title="任远畅的照片"></p>
+    <img src="./图片/OIP-C (1).jpg" alt="香香" width="200" title="喜多多">
+    <a href="盒子.html" target="盒子">盒子</a><br>
+    <a href="浮动定位.HTML" target="_浮动">浮动</a>
+    <a href="script.html" target="_script">script</a>
+    <a href="https://www.bilibili.com/" target="_视频">视频</a>
+    <form><label for="name">姓名：</label>
+        <input type="text" placeholder="请输入你的名字" class="输入"><br>
+        <label for="name">爱好：</label>
+        <input type="checkbox">唱歌
+        <input type="checkbox">跳舞
+        <input type="checkbox">篮球 <br>
+        <label>性别:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+
+        <br>
+
+        <button onclick="submit()">提交</button><br>
+       
+        
+    </form>
+    <script>
+        function submit(){
+            alert("提交成功！");
+        }</script>
+    <div class="block"> 块元素</div>
+    <span class="inline">行内元素</span> <br>
+    </div>
+
+              <div class="fix"><img src="任.png" alt="任远畅的照片" width="100px" height="100px";  title="任远畅的照片"></div>
+                </div>
+        <button onclick="add()">增加</button>        
+      <table id="表格" >
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>年龄</th>
+        </tr>
+        <tr>
+          <td>任远畅</td>
+          <td>男</td>
+          <td>18</td>
+        </tr>   
+        <script>function add(){
+          var table = document.getElementById("表格");
+          var length = table.rows.length;
+          var row = table.insertRow(length);
+          console.log(row);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          cell1.innerHTML = "";
+          cell2.innerHTML = "";
+          cell3.innerHTML = "";
+        } </script>    
+            <video src="./视频/猫mem.mp4" controls="controls" width="300px" height="200px"></video>
+
+
+
+</body>
+
+</html>
